@@ -9,7 +9,7 @@
 ## Instalation Requirements
 * Open your terminal.
 * Git clone this repo on your terminal.
-* Cd password-locker then code to open your Visual Studio.
+* Cd password-locker then code to open your Visual Studio
 * run this comand python3 according to the version of the python you are using.
 ## Features
 * Create account.
