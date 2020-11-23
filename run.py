@@ -21,3 +21,16 @@ def save_credentials(credentials):
 def delete_credentials(credentials):
     credentials.delete_credentials()
 
+def view_credentials():
+    return Credentials.view_credatials()
+
+def credatials_user_exists(account_name):
+    return credentials.credatials_user_exists(account_name)
+
+def find_account(account_name):
+    return Credentials.view_account_name(account_name)
+
+def bring_password ():
+    bring_password =Credentials.bring_password()
+    return bring_password
+    
