@@ -17,7 +17,7 @@
 * Add credentials for different accounts.
 * Store and generate password.
 * Sees a list of all your saved credential.
-* Search for the saved credential.
+* Search for the saved credentialc
 * Copy the credentials.
 * Delete saved credentials.
 ## Github Repo Link
