@@ -59,4 +59,75 @@ def main():
 
 
 
-        
+        elif enter == 'cd':
+            print("enter your password to signin")
+            print("input your username")
+            username = input()
+            print("input your password")
+            password = input()
+            Real_user = enter_user(username,password)
+            if Real_user == username:
+                print(f"Hi {username}")
+                while True:
+                    print("use j to create credentials,del to Delete,cw to display,wm to find credentials, x exit")
+                    create_credentials = input().lower()
+                    if create_credentials =='j':
+                        print("create ccreate_credentialsredentials")
+                        print("enter account_name")
+                        account_name= input()
+                        print("enter username")
+                        username = input()
+                        print('use z to create password,n to auto generate password,s to exit')
+                        password = input().lower()
+
+                        if password == 'z':
+                            password = input('enter password: ')
+
+                        elif password == 'n':
+                              password = bring_password()
+
+                        else:
+                            print('invalid input')
+
+                        save_credentials(user_credentials(account_name,username,password))
+                        print(f"your credentials are {account_name},{username},{password} has been created")
+
+                            
+                    elif create_credentials == "del":
+                        print("enetr account to delete")
+                        account = input()
+                        if find_account(account):
+                            account_to_delete = find_account(account)
+                            account_to_delete.delete_credentials()
+                            print("account deleted")
+                        else:
+                            print("we did not found account without name")
+
+                    elif create_credentials=="cw":
+                        print("your credentials are here")
+                        if view_credentials():
+                            for account in view_credentials():
+                                print(f"account: {account_name} \n username: {username} \n password: {password} \n")
+                        
+                        else:
+                            print(" no credentials" )
+                    elif create_credentials == "wm":
+                        print("enter account to search")
+                        account = input()
+                        if find_account(account):
+                            search = find_account(account)
+                            print(f"account: {search.account_name} \n username:{search.user_name} \n password: {search.password} \n")
+                        else:
+                            print("The credentials does not exist")
+
+                    else:
+                        print("exit")
+
+        else:
+            print("good day!")
+
+
+
+
+if __name__ == "__main__":
+    main()
