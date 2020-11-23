@@ -41,4 +41,16 @@ class Credentials:
                 return True
         return False 
 
+    @classmethod
+    def view_account_name(cls,account_name):
+        for credentials in cls.user_credentials:
+            if credentials.account_name == account_name:
+                return credentials
+
+    @classmethod
+    def view_credatials(cls):
+        return cls.user_credentials
+
     
+    
+
