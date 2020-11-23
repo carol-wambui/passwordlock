@@ -9,4 +9,14 @@ class User:
       self.password = password
       
 
-    
+    def save_user(self):
+          User.user_list.append(self)
+
+    @classmethod
+    def user_recognised(cls,user_name,password):
+        current_user = ""
+        for user in User.user_list:
+         if user.user_name == user_name and user.password == password:
+            current_user = user.user_name
+            return current_user
+
