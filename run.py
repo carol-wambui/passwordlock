@@ -11,3 +11,10 @@ def enter_user (username,password):
 def save_user(user):
     user.save_user()
 
+def user_credentials(account_name,user_name,password):
+    new_credentials = Credentials(account_name,user_name,password)
+    return new_credentials
+
+def save_credentials(credentials):
+    credentials.save_credentials()
+
