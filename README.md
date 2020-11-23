@@ -12,12 +12,12 @@
 * Cd password-locker then code to open your Visual Studio
 * run this comand python3 according to the version of the python you are using.
 ## Features
-* Create account.
-* Log into your account.
-* Add credentials for different accounts.
-* Store and generate password.
-* Sees a list of all your saved credential.
-* Search for the saved credentialc
+* Create account
+* Log into your account
+* Add credentials for different accounts
+* Store and generate password
+* Sees a list of all your saved credentials
+* Search for the saved credentials
 * Copy the credentials.
 * Delete saved credentials.
 ## Github Repo Link
