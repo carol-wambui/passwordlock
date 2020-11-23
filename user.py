@@ -51,6 +51,9 @@ class Credentials:
     def view_credatials(cls):
         return cls.user_credentials
 
-    
+    def bring_password (stringcashy=8):
+        password =string.ascii_uppercase +string.ascii_lowercase +string.digits + "(/|~!.@,)#{?&[%]^}&*"
+        return "".join(random.choice(password)for i in range(stringcashy))
+
     
 
