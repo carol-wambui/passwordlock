@@ -18,3 +18,6 @@ def user_credentials(account_name,user_name,password):
 def save_credentials(credentials):
     credentials.save_credentials()
 
+def delete_credentials(credentials):
+    credentials.delete_credentials()
+
