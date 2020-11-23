@@ -34,3 +34,29 @@ def bring_password ():
     bring_password =Credentials.bring_password()
     return bring_password
     
+def main():
+    while True:
+        print('welcome to passwordlock use this command AB to login,CD  to create account, EF to signin, GH to exit')
+        enter = input().lower()
+        if enter =='ab':
+            print('login')
+            username = input('enter username')
+            
+            print('use z to create password,n to auto generate password,s to exit')
+            password = input().lower()
+
+            if password == 'z':
+                password = input('enter password')
+
+            elif password == 'n':
+                password=bring_password()
+
+            else:
+                print('invalid input')
+                
+            save_user(demand_user(username,password))
+            print(f"welcome {username}, your account password is {password} use it to login")
+
+
+
+        
