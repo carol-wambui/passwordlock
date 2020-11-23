@@ -34,4 +34,11 @@ class Credentials:
     def delete_credentials(self):
            Credentials.user_credentials.remove (self)
 
+    @classmethod
+    def credentials_user_exists(cls,account_name):
+        for credentials in cls.credentials:
+            if credentials.account == account:
+                return True
+        return False 
+
     
